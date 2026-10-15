@@ -1,7 +1,7 @@
 <template>
     <section id="hero">
         <div class="left">
-            <h1>Home of the Dauntless and the Brave</h1>
+            <h1 class="tagline">Home of the Dauntless <br> and the Brave</h1>
             <p class="description">The College of Computer Studies (CCS) at Central Philippine University provides quality education in 
                 Information Technology (IT), Computer Science (CS), Digital Media and Interactive Arts (DMIA), 
                 and Library and Information Science (BLIS). It prepares students to become skilled professionals by fostering 
@@ -21,7 +21,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('@/assets/church.jpeg');
+    background-image: url('@/assets/cover.png');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
 }
 .ccs  {
     width: 350px;
@@ -30,6 +34,12 @@
     border: 0;
     border-radius: 4px;
     padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.tagline {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
 }
 .description {
     max-width: 500px;
