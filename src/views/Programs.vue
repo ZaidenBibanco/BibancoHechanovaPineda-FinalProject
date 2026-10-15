@@ -4,42 +4,47 @@
         <div class="programs-column">
             <div class="programs-card">
                 <div class="programs-img">
-                    <img src="@/assets/itso.png" class="itso">
+                    <img src="@/assets/itso.png" class="img">
                 </div>
                 <h3>Information Technology</h3>
                 <div class="programs-info">
                     <p>The Information Technology (IT) Program is designed to bridge the gap between computer science and management 
                         information systems.
                     </p>
+                    <button class="read">Read More</button>
                 </div>
             </div>
             
             <div class="programs-card">
-                <img src="@/assets/css.png" class="css">
+                <img src="@/assets/css.png" class="img">
                 <h3>Computer Science</h3>
                 <div class="programs-info">
                     <p>The Computer Science (CS) Program is designed for students who wants to study computing in depth, 
-                        focusing in the software and hardware. </p>
+                        focusing in the software and hardware. 
+                    </p>
+                    <button class="read">Read More</button>
                 </div>
             </div>
 
             <div class="programs-card">
-                <img src="@/assets/midas.png" class="midas">
+                <img src="@/assets/midas.png" class="img">
                 <h3>Digital Media and Interactive Arts</h3>
                 <div class="programs-info">
                     <p>The Degree of Bachelor of Science in Digital Media and Interactive Arts (DMIA) is focused on creativity, applied arts and digital 
                         media technologies.
                     </p>
+                    <button class="read">Read More</button>
                 </div>
             </div>
 
             <div class="programs-card">
-                <img src="@/assets/lisso.png" class="lisso">
+                <img src="@/assets/lisso.png" class="img">
                 <h3>Libracy Information Science</h3>
                 <div class="programs-info">
                     <p>The Degree of Bachelor of Library and Information Science (BLIS) is a four-year 
                         program that prepares students in the devleopment.
                     </p>
+                    <button class="read">Read More</button>
                 </div>
             </div>
         </div>
@@ -47,7 +52,7 @@
 </template>
 
 <style>
-.programs {
+#programs {
     background-color: #f8f9fa;
     width: 100%;
     padding: 4rem 1.5rem;
@@ -58,7 +63,7 @@
     flex-direction: column;
     height: 50vh;
 }
-.programs > h3 {
+#programs > h3 {
     color: #2b1b5e;
     font-size: 1.8rem;
     letter-spacing: 0.05rem;
@@ -103,4 +108,12 @@
     line-height: 1.5;
     color: #4a5568;
 }
+.read {
+    background-color: #4a5568;
+    border: 0;
+    padding: 10px;
+    color: #ffffff;
+    border-radius: 4px;
+}
+
 </style>
