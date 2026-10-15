@@ -1,1 +1,5 @@
-<template></template>
+<template>
+    <section id="partnerships">
+        
+    </section>
+</template>
