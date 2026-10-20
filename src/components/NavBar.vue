@@ -34,7 +34,7 @@ nav {
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.5rem;
     font-weight: 700;
-    color: #2b1b53;
+    color: #2E7D32;
 }
 nav ul {
     display: flex;
