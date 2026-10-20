@@ -61,7 +61,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 50vh;
+    
 }
 #programs > h3 {
     color: #2b1b5e;
