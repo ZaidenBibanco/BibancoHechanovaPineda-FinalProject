@@ -94,7 +94,7 @@
     background-color: rgb(100, 98, 98);
     padding: 40px;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat',sans-serif;
 }
 
 .partner-heading h1 {

@@ -8,8 +8,7 @@
                 </div>
                 <h3>Information Technology</h3>
                 <div class="programs-info">
-                    <p>The Information Technology (IT) Program is designed to bridge the gap between computer science and management 
-                        information systems.
+                    <p>Learn to develop, manage, and maintain technology solutions that address real-world needs.
                     </p>
                     <button class="read"><router-link to="/bsit" active-class="active">Read More</router-link></button>
                 </div>
@@ -21,8 +20,7 @@
                 </div>
                 <h3>Computer Science</h3>
                 <div class="programs-info">
-                    <p>The Computer Science (CS) Program is designed for students who wants to study computing in depth, 
-                        focusing in the software and hardware. 
+                    <p>Explore programming, algorithms, and computing principles to design innovative software and solve complex problems.
                     </p>
                     <button class="read"><router-link to="/bscs" active-class="active">Read More</router-link></button>
                 </div>
@@ -34,8 +32,7 @@
                 </div>
                 <h3>Digital Media and Interactive Arts</h3>
                 <div class="programs-info">
-                    <p>The Degree of Bachelor of Science in Digital Media and Interactive Arts (DMIA) is focused on creativity, applied arts and digital 
-                        media technologies.
+                    <p>Combine creativity and technology to create engaging digital media, interactive experiences, and visual content.
                     </p>
                     <button class="read"><router-link to="/bsdmia" active-class="active">Read More</router-link></button>
                 </div>
@@ -47,8 +44,7 @@
                 </div>
                 <h3>Libracy Information Science</h3>
                 <div class="programs-info">
-                    <p>The Degree of Bachelor of Library and Information Science (BLIS) is a four-year 
-                        program that prepares students in the development.
+                    <p>Learn to organize, manage, preserve, and provide access to information in libraries and other information-centered organizations.
                     </p>
                     <button class="read"><router-link to="/blis" active-class="active">Read More</router-link></button>
                 </div>
@@ -67,6 +63,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    font-family: 'Monserrat', sans-serif;
     
 }
 #programs a {

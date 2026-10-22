@@ -2,7 +2,9 @@
     <nav>
         <div class="nav-left">
             <div class="ccs-logo">
-            <img src="@/assets/ccs.png" class="logo" alt="CCS Logo">
+                <router-link to='/'>
+                    <img src="@/assets/ccs.png" class="logo" alt="CCS Logo">
+                </router-link>
             </div>
             <div class="brand-text">
                 <h3>College of Computer Studies</h3>
