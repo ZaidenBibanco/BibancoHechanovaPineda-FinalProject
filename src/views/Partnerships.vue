@@ -126,7 +126,7 @@
     padding: 20px;
     border-radius: 10px;
     border:  1px solid #e6e6ec ;
-    border-top: 7px solid #c8a100 ; 
+    border-top: 7px solid #2E7D32 ; 
     
 }
 

@@ -24,31 +24,36 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 50px;
+    padding: 12px 5%;
     background: #fff;
-    flex-wrap: wrap;
-    gap: 1rem;
-    
-    font-family: 'Montserrat',sans-serif;
-    font-size: larger;
+    gap: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
     font-weight: 600;
-
 }
 .nav-left {
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    min-width: 0;
 }
 .logo {
-    width: 150px;
+    display: block;
+    width: 90px;
+    height: auto;
 }
 .brand-text {
-    font-family: 'Playfair Display',sefic;
-    font-size: 1.5rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
     font-weight: 700;
     color: #2E2D2D;
 }
+.brand-text h3 {
+    margin: 0;
+}
 nav ul {
     display: flex;
+    align-items: center;
     list-style: none;
     gap: 2rem;
     margin: 0;
@@ -57,11 +62,95 @@ nav ul {
 .nav-right {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
 }
 nav a {
     text-decoration: none;
-    color: black;
-    transition: color .2s;
+    color: #2E2D2D;
+    transition: color 0.2s ease;
+}
+nav a:hover,
+nav a.active {
+    color: #2E7D32;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+    nav {
+        padding: 12px 4%;
+        gap: 1rem;
+    }
+
+    .logo {
+        width: 70px;
+    }
+
+    .nav-left {
+        gap: 10px;
+    }
+
+    .brand-text {
+        font-size: 0.95rem;
+    }
+
+    nav ul {
+        gap: 1rem;
+    }
+
+    nav {
+        font-size: 0.9rem;
+    }
+}
+
+/* PHONE */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 15px 5%;
+    }
+
+    .nav-left {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .logo {
+        width: 60px;
+    }
+
+    .brand-text {
+        font-size: 1rem;
+    }
+
+    .nav-right {
+        width: 100%;
+        justify-content: center;
+    }
+
+    nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px 22px;
+    }
+
+    nav a {
+        font-size: 0.85rem;
+    }
+}
+
+/* VERY SMALL PHONES */
+@media (max-width: 360px) {
+    .brand-text {
+        font-size: 0.85rem;
+    }
+
+    .logo {
+        width: 50px;
+    }
+
+    nav ul {
+        gap: 10px 16px;
+    }
 }
 </style>
