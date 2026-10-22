@@ -59,7 +59,7 @@
 
 <style>
 #programs {
-    background-color: #f8f9fa;
+    background-color: #fff;
     width: 100%;
     padding: 4rem 1.5rem;
     min-height: 50vh; 
@@ -70,7 +70,7 @@
     
 }
 #programs > h3 {
-    color: #2b1b5e;
+    color: #1A1919;
     font-size: 1.8rem;
     letter-spacing: 0.05rem;
     margin: 0 0 2rem 0;
@@ -123,7 +123,7 @@
 }
 
 .programs-card h3 {
-    color: #2b1b5e;
+    color: #1A1919;
     font-size: 1.15rem;
     margin: 0 0 1rem 0;
     padding-bottom: 0.5rem;

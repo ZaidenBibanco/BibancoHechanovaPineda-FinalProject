@@ -1,7 +1,12 @@
 <template>
     <nav>
-        <div class="brand-text">
-            <h3>College of Computer Studies</h3>
+        <div class="nav-left">
+            <div class="ccs-logo">
+            <img src="@/assets/ccs.png" class="logo" alt="CCS Logo">
+            </div>
+            <div class="brand-text">
+                <h3>College of Computer Studies</h3>
+            </div>
         </div>
 
         <div class="nav-right">
@@ -23,18 +28,24 @@ nav {
     background: #fff;
     flex-wrap: wrap;
     gap: 1rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    
+    font-family: 'Montserrat',sans-serif;
+    font-size: larger;
+    font-weight: 600;
+
 }
-.brand {
+.nav-left {
     display: flex;
-    align-items: center;
-    gap: .7rem;
+    flex-direction: row;
+}
+.logo {
+    width: 150px;
 }
 .brand-text {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Playfair Display',sefic;
     font-size: 1.5rem;
     font-weight: 700;
-    color: #2E7D32;
+    color: #2E2D2D;
 }
 nav ul {
     display: flex;
