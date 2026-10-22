@@ -69,6 +69,16 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+#blis h1 {
+    font-family: "Montserrat", sans-serif;
+}
+#blis p {
+    font-family: "Roboto";
+}
+#blis li {
+    font-family: "Roboto";
+}
+
 .blis-top {
     background-color: rgb(226, 236, 236);
     padding: 40px;

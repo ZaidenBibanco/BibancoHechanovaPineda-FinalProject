@@ -11,7 +11,7 @@
                     <p>The Information Technology (IT) Program is designed to bridge the gap between computer science and management 
                         information systems.
                     </p>
-                    <button class="read">Read More</button>
+                    <button class="read"><router-link to="/bsit" active-class="active">Read More</router-link></button>
                 </div>
             </div>
             
@@ -24,7 +24,7 @@
                     <p>The Computer Science (CS) Program is designed for students who wants to study computing in depth, 
                         focusing in the software and hardware. 
                     </p>
-                    <button class="read">Read More</button>
+                    <button class="read"><router-link to="/bscs" active-class="active">Read More</router-link></button>
                 </div>
             </div>
 
@@ -37,7 +37,7 @@
                     <p>The Degree of Bachelor of Science in Digital Media and Interactive Arts (DMIA) is focused on creativity, applied arts and digital 
                         media technologies.
                     </p>
-                    <button class="read">Read More</button>
+                    <button class="read"><router-link to="/bsdmia" active-class="active">Read More</router-link></button>
                 </div>
             </div>
 
@@ -50,7 +50,7 @@
                     <p>The Degree of Bachelor of Library and Information Science (BLIS) is a four-year 
                         program that prepares students in the development.
                     </p>
-                    <button class="read">Read More</button>
+                    <button class="read"><router-link to="/blis" active-class="active">Read More</router-link></button>
                 </div>
             </div>
         </div>
@@ -68,6 +68,10 @@
     align-items: center;
     flex-direction: column;
     
+}
+#programs a {
+    text-decoration: none;
+    color: #fff;
 }
 #programs > h3 {
     color: #1A1919;
