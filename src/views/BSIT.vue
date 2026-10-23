@@ -46,7 +46,7 @@
                 </p>
             </div>
 
-            <div class="BLIS-card">
+            <div class="BSIT-card">
                 <h2>Why Choose BSIT?</h2>
                 <p>
                     BSIT is a good choice for students who enjoy solving
@@ -57,7 +57,7 @@
                 </p>
             </div>
 
-            <div class="BLIS-card">
+            <div class="BSIT-card">
                 <h2>Who Should Enroll?</h2>
                 <p>
                     This program may suit students who are curious about
@@ -146,7 +146,7 @@
     font-size: 1.5em;
 }
 
-.BLIS-card {
+.BSIT-card {
     background: rgb(226, 236, 236);
     width: 800px;
     height: auto;
@@ -160,7 +160,7 @@
 }
 
 #bsit .bsit-card,
-#bsit .BLIS-card {
+#bsit .BSIT-card {
     width: 100%;
     min-width: 0;
     margin: 0 auto;
@@ -168,7 +168,7 @@
 
 
 
-.BLIS-card h2{
+.BSIT-card h2{
     text-align: left;
 }
 .bsit-card h2 {
@@ -208,7 +208,7 @@
     font-size: larger;
 }
 
-.BLIS-card p {
+.BSIT-card p {
     font-size: larger;
 }
 
@@ -220,7 +220,7 @@
     }
 
     #bsit .bsit-card,
-    #bsit .BLIS-card {
+    #bsit .BSIT-card {
         max-width: 700px;
     }
 }
