@@ -22,7 +22,7 @@
                         <img src="@/assets/ccs.png" class="ccs" alt="CCS Logo">
                         <h1>College of <br> Computer Studies</h1>
                         <div class="line"></div>
-                        <h4><i>"CCS THE BEST!"</i></h4>
+                        <h4><i>"CCS THE BEST"</i></h4>
                     </div>
             </div>
             </div>
