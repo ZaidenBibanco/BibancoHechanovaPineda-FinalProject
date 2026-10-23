@@ -153,4 +153,18 @@
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
+/* Tablet */
+@media (max-width: 1024px) {
+    .partner-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .partner-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+}
 </style>

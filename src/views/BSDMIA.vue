@@ -66,10 +66,26 @@
 </template>
 
 <style scoped>
+
+#dmia,
+#dmia *,
+#dmia *::before,
+#dmia *::after {
+    box-sizing: border-box;
+}
+
 #dmia {
     background-color: white;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+/* FIX: grid layout with centered cards and gaps between them */
+#dmia .dmia-content {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr); 
+    justify-items: center;                
+    gap: 30px;
 }
 
 #dmia h1 {
@@ -136,6 +152,13 @@
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
+
+#dmia .dmia-card,
+#dmia .DMIA-card {
+    min-width: 0;
+    margin: 0 auto;
+}
+
 .DMIA-card h2 {
     text-align: left;
 }
@@ -171,5 +194,23 @@
 .DMIA-card p {
     font-size: larger;
 }
+
+
+@media (max-width: 900px) {
+    #dmia .dmia-content {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    #dmia .dmia-card,
+    #dmia .DMIA-card {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 600px) {
+    #dmia .dmia-content {
+        padding: 24px 16px;
+    }
+}
 </style>
-```

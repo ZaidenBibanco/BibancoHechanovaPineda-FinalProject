@@ -72,10 +72,26 @@
 
 <style scoped>
 
+
+#bsit,
+#bsit *,
+#bsit *::before,
+#bsit *::after {
+    box-sizing: border-box;
+}
+
 #bsit {
     background-color: white;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#bsit .bsit-content {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr); 
+    justify-items: center;               
+    gap: 30px;
 }
 
 #bsit h1 {
@@ -143,6 +159,13 @@
     transition: transform 0.3s, box shadow 0.3s;
 }
 
+#bsit .bsit-card,
+#bsit .BLIS-card {
+    width: 100%;
+    min-width: 0;
+    margin: 0 auto;
+}
+
 
 
 .BLIS-card h2{
@@ -162,6 +185,7 @@
     content: "";
     display: block;
     width: 500px;
+    max-width: 100%;           
     height: 4px;
     background-color: purple;
     margin: 12px auto 0;
@@ -186,6 +210,25 @@
 
 .BLIS-card p {
     font-size: larger;
+}
+
+
+@media (max-width: 900px) {
+    #bsit .bsit-content {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    #bsit .bsit-card,
+    #bsit .BLIS-card {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 600px) {
+    #bsit .bsit-content {
+        padding: 24px 16px;
+    }
 }
 
 

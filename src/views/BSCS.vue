@@ -66,10 +66,26 @@
 </template>
 
 <style scoped>
+
+#cs,
+#cs *,
+#cs *::before,
+#cs *::after {
+    box-sizing: border-box;
+}
+
 #cs {
     background-color: white;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#cs .cs-content {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr); 
+    justify-items: center;                 
+    gap: 30px;
 }
 
 #cs h1 {
@@ -136,6 +152,13 @@
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
+
+#cs .cs-card,
+#cs .CS-card {
+    min-width: 0;
+    margin: 0 auto;
+}
+
 .CS-card h2 {
     text-align: left;
 }
@@ -171,5 +194,23 @@
 .CS-card p {
     font-size: larger;
 }
+
+
+@media (max-width: 900px) {
+    #cs .cs-content {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    #cs .cs-card,
+    #cs .CS-card {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 600px) {
+    #cs .cs-content {
+        padding: 24px 16px;
+    }
+}
 </style>
-```

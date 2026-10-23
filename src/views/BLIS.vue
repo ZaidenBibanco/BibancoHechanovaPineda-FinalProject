@@ -63,11 +63,29 @@
 
 <style scoped>
 
+
+#blis,
+#blis *,
+#blis *::before,
+#blis *::after {
+    box-sizing: border-box;
+}
+
 #blis {
     background-color: white;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
+#blis .blis-content {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr); 
+    justify-items: center;                 
+    gap: 30px;                 
+    row-gap: 30px;
+    column-gap: 30px;
+}
+
+
 
 #blis h1 {
     font-family: "Montserrat", sans-serif;
@@ -105,9 +123,10 @@
 
 .blis-card {
     background: white;
-    width: 800px;
+    width: 100%;
+    min-width: 0;              
     height: auto;
-    margin-bottom: 30px;
+    margin: 0 auto;
     padding: 20px;
     border-radius: 10px;
     border: 1px solid teal;
@@ -123,10 +142,11 @@
 
 .BLIS-card {
     background: rgb(226, 236, 236);
-    width: 800px;
+    width: 100%;
+    min-width: 0;              
     height: auto;
-    margin-bottom: 30px;
-    padding: 20px;
+    margin-bottom: 0;
+    padding: 20px 16px;
     border-radius: 10px;
     border: 1px solid teal;
     border-left: 4px solid teal;
@@ -153,6 +173,7 @@
     content: "";
     display: block;
     width: 500px;
+    max-width: 100%;           
     height: 4px;
     background-color: teal;
     margin: 12px auto 0;
@@ -179,5 +200,22 @@
     font-size: larger;
 }
 
+@media (max-width: 900px) {
+    #blis .blis-content {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    #blis .blis-card,
+    #blis .BLIS-card {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 600px) {
+    #blis .blis-content {
+        padding: 24px 16px;
+    }
+}
 
 </style>
